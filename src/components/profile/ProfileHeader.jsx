@@ -7,15 +7,15 @@ const ProfileHeader = () => {
     <View style={styles.header}>
       <View style={styles.user}>
         <Text style={styles.username}>username</Text>
-        <Dropdown size={30} />
+        <Dropdown size={20} />
       </View>
 
       <View style={styles.headerRight}>
         <TouchableOpacity>
-          <Plus size={30} />
+          <Plus size={24} />
         </TouchableOpacity>
         <TouchableOpacity>
-          <BurgerMenu size={25} />
+          <BurgerMenu size={24} />
         </TouchableOpacity>
       </View>
     </View>

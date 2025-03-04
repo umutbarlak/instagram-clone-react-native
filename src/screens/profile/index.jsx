@@ -36,20 +36,22 @@ const ProfileScreen = () => {
     <SafeAreaView
       style={{flex: 1, backgroundColor: 'white'}}
       edges={['left', 'right', 'top']}>
-      <ScrollView style={{backgroundColor: 'white', flex: 1}}>
-        <ProfileHeader />
-        <ProfileInfo />
-        <ProfileBio />
-        <ProfileStory />
-        <FlatList
-          numColumns={numColumns}
-          contentContainerStyle={{gap: 1}}
-          columnWrapperStyle={{gap: 1}}
-          data={posts}
-          renderItem={renderItem}
-          keyExtractor={item => item.id}
-        />
-      </ScrollView>
+      <FlatList
+        ListHeaderComponent={
+          <>
+            <ProfileHeader />
+            <ProfileInfo />
+            <ProfileBio />
+            <ProfileStory />
+          </>
+        }
+        numColumns={numColumns}
+        contentContainerStyle={{gap: 1}}
+        columnWrapperStyle={{gap: 1}}
+        data={posts}
+        renderItem={renderItem}
+        keyExtractor={item => item.id}
+      />
     </SafeAreaView>
   );
 };

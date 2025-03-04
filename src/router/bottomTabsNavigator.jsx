@@ -39,7 +39,7 @@ const BottomTabsNavigator = () => {
           // headerShown: false,
           headerTitle: '',
           tabBarIcon: ({focused}) =>
-            focused ? <HomeField size={30} /> : <Home size={30} />,
+            focused ? <HomeField size={25} /> : <Home size={25} />,
           headerLeft: () => <HomeHeaderLeft />,
           headerRight: () => <HomeHeaderRight />,
         }}
@@ -49,7 +49,7 @@ const BottomTabsNavigator = () => {
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) =>
-            focused ? <SearchField size={30} /> : <Search size={30} />,
+            focused ? <SearchField size={35} /> : <Search size={25} />,
         }}
         name={SCREENS.SEARCHSCREEN}
         component={SearchScreen}
@@ -57,7 +57,7 @@ const BottomTabsNavigator = () => {
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) =>
-            focused ? <ReelField size={30} /> : <Reel size={30} />,
+            focused ? <ReelField size={30} /> : <Reel size={25} />,
         }}
         name={SCREENS.REELSCREEN}
         component={ReelScreen}
@@ -65,7 +65,7 @@ const BottomTabsNavigator = () => {
       <Tab.Screen
         options={{
           tabBarIcon: ({focused}) =>
-            focused ? <ShopField size={30} /> : <Shop size={30} />,
+            focused ? <ShopField size={32} /> : <Shop size={25} />,
         }}
         name={SCREENS.SHOPSCREEN}
         component={ShopScreen}

@@ -52,7 +52,7 @@ const Post = ({post}) => {
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          <View style={{flexDirection: 'row', gap: 10}}>
+          <View style={{flexDirection: 'row', alignItems: 'center', gap: 10}}>
             <TouchableOpacity
               style={{
                 flexDirection: 'row',
@@ -60,7 +60,7 @@ const Post = ({post}) => {
 
                 gap: 5,
               }}>
-              <Heart size={25} />
+              <Heart size={20} />
               <Text style={{fontWeight: 600}}>{post.likes}</Text>
             </TouchableOpacity>
             <TouchableOpacity
@@ -71,11 +71,11 @@ const Post = ({post}) => {
                 fontWeight: 500,
                 gap: 5,
               }}>
-              <Comment size={25} />
+              <Comment size={20} />
               <Text style={{fontWeight: 600}}>{post.comments}</Text>
             </TouchableOpacity>
             <TouchableOpacity>
-              <Share size={25} />
+              <Share size={20} />
             </TouchableOpacity>
           </View>
           <TouchableOpacity>
