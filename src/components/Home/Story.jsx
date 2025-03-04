@@ -1,19 +1,19 @@
 import {StyleSheet, View, Image, Text} from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
-const Story = ({story}) => {
+const Story = ({image, label}) => {
   return (
     <View style={styles.story}>
-      {/* <LinearGradient
+      <LinearGradient
         style={styles.cover}
         colors={['#C913B9', '#F9373F', '#FECD00']}>
-            
-        </LinearGradient> */}
-      <Image source={{uri: story.user.avatar}} style={styles.avatar} />
+        <Image source={{uri: image}} style={styles.avatar} />
+      </LinearGradient>
 
       <Text numberOfLines={1} style={styles.username}>
-        {story.user.name}
+        {label}
       </Text>
+      <Text></Text>
     </View>
   );
 };

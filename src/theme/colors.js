@@ -3,6 +3,6 @@ export const COLORS = {
   WHITE: '#fff',
   BLUE: '#2E5077',
   BLACK: '#000000',
-  GRAY: '#E5E3D4',
+  GRAY: '#E6E6E6',
   GRAY2: '#DCDCDC',
 };

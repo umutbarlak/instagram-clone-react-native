@@ -36,6 +36,7 @@ const BottomTabsNavigator = () => {
       }}>
       <Tab.Screen
         options={{
+          // headerShown: false,
           headerTitle: '',
           tabBarIcon: ({focused}) =>
             focused ? <HomeField size={30} /> : <Home size={30} />,
@@ -71,6 +72,7 @@ const BottomTabsNavigator = () => {
       />
       <Tab.Screen
         options={{
+          headerShown: false,
           tabBarIcon: focused => (
             <Image
               style={styles.avatar}
