@@ -5,7 +5,9 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 
 const HomeScreen = () => {
   return (
-    <SafeAreaView style={{flex: 1}} edges={['left', 'right']}>
+    <SafeAreaView
+      style={{flex: 1, backgroundColor: 'white'}}
+      edges={['left', 'right']}>
       <Stories />
       <Posts />
     </SafeAreaView>

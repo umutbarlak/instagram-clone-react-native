@@ -8,8 +8,9 @@ const ProfileStory = () => {
       style={styles.stories}
       horizontal
       showsHorizontalScrollIndicator={false}>
-      {[1, 2, 3, 4, 5, 6, 7, 8].map(i => (
+      {[1, 2, 3, 4, 5, 6, 7, 8].map((i, index) => (
         <Story
+          key={index.toString()}
           image={`https://picsum.photos/200/300?random=${i}`}
           label={'Gezilerimiz'}
         />

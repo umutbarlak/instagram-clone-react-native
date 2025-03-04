@@ -84,7 +84,6 @@ const Post = ({post}) => {
         </View>
         {post.description && (
           <ReadMore
-            key={post.id}
             style={{marginVertical: 5}}
             numberOfLines={2}
             seeLessText="daha az"
@@ -92,11 +91,7 @@ const Post = ({post}) => {
             seeMoreStyle={{color: '#999'}}
             seeMoreText="daha fazla"
             gap={10}>
-            <Text key={'readmore'} style={{fontWeight: 700, paddingEnd: 10}}>
-              {post.user.name} &nbsp;
-            </Text>
-
-            {post.description}
+            {`${post.description}`}
           </ReadMore>
         )}
         (
